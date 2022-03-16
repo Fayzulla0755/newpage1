@@ -1,0 +1,25 @@
+{
+  "name": "newpage1",
+  "version": "1.0.0",
+  "description": "file",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fayzulla0755/newpage1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fayzulla0755/newpage1/issues"
+  },
+  "homepage": "https://github.com/Fayzulla0755/newpage1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4",
+    "pug": "^3.0.2"
+  }
+}

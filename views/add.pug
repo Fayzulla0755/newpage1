@@ -1,0 +1,47 @@
+include header 
+body 
+include navbar 
+.container
+    h2.text-center.my-3=update  
+    if(datas)
+        form(method="POST")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') Nomi
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' name='name' value=datas.name)
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Ishlab chiqaruvchi
+                input#exampleInputPassword1.form-control(type='text' name='manufacturer' value=datas.manufacturer)
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Narxi
+                input#exampleprice.form-control(type='number' name='price' value=datas.price)
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Ko&apos;rishlar soni
+                input#exampleInputviews.form-control(type='numbert' name='views' value=datas.views)
+            .mb-3
+                label.form-label(for='area') Tavsif
+                input.form-control(name="comment", type="text"  style="height: 90px" value=datas.comment) 
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Rasmni joylang
+                input#exampleInputComment.form-control(type='file' name='img')
+            button.btn.btn-primary(type='submit') Tahrirlash
+    else 
+        form(method="POST")
+            .mb-3
+                label.form-label(for='exampleInputEmail1') Nomi
+                input#exampleInputEmail1.form-control(type='text' aria-describedby='emailHelp' name='name')
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Ishlab chiqaruvchi
+                input#exampleInputPassword1.form-control(type='text' name='manufacturer')
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Narxi
+                input#exampleprice.form-control(type='number' name='price')
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Ko&apos;rishlar soni
+                input#exampleInputviews.form-control(type='numbert' name='views' )
+            .mb-3
+                label.form-label(for='area') Tavsif
+                input.form-control(name="comment", type="text"  style="height: 90px") 
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Rasmni joylang
+                input#exampleInputComment.form-control(type='file' name='img')
+            button.btn.btn-primary(type='submit') yuborish
